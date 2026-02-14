@@ -101,6 +101,21 @@ h4 {
 	font-size: 1.14em;
 	color: var(--midnight-blue);
 }
+nav {
+	background-color: var(--champagne-gold);
+	padding: 0;
+}
+nav ul {
+	display: flex;
+	justify-content: center;
+}
+nav a {
+	color: var(--midnight-blue);
+	text-decoration: none;
+	font-weight: bold;
+	padding: 0.5rem 1rem;
+	font-size: 2em;
+}
 p {
 	font-size: 1em;
 	color: var(--dark-charcoal);
@@ -129,6 +144,16 @@ footer a {
 .offerings h3 {
 	color: var(--soft-white);
 	font-weight: bold;
+}
+.gallery {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 1rem;
+	background-color: var(--soft-white);
+	box-shadow: #2B2B2B 0px 2px 4px;
+	border-radius: 5px;
+	font-style: italic;
+	margin: 1rem;
 }
 /* MEDIA QUERY (medium) */
 
