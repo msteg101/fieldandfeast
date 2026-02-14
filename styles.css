@@ -72,7 +72,7 @@ body {
 	grid-template-columns: auto;
 	grid-template-areas: "header" "main" "footer";
 	font-family: var(--font-family);
-	margin: 0 auto;
+	
 }
 header {
 	grid-area: header;
@@ -84,6 +84,7 @@ header {
 }
 main {
 	grid-area: main;
+	margin: 0 1em;
 }
 h1 {
 	font-size: 3em;
@@ -103,11 +104,14 @@ h4 {
 }
 nav {
 	background-color: var(--champagne-gold);
-	padding: 0;
+	padding: 5px;
+	margin: 0;
+	width: 100%;
 }
 nav ul {
 	display: flex;
 	justify-content: center;
+	width: 100%;
 }
 nav a {
 	color: var(--midnight-blue);
@@ -156,7 +160,14 @@ footer a {
 	margin: 1rem;
 }
 /* MEDIA QUERY (medium) */
-
+@media all (min-with: 600px) {
+	
+}
 /* MEDIA QUERY (large) */
-
+@media all (min-width: 900px) {
+	
+}
 /* MEDIA QUERY (xl) */
+@media all (min-width: 1200px) {
+	
+}
