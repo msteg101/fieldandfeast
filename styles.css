@@ -115,6 +115,21 @@ footer a {
 	color: var(--champagne-gold);
 	font-weight: bold;
 }
+.offerings {
+	background-color: var(--olive-green);
+	color: var(--soft-white);
+	padding: 0.5rem;
+	border-radius: 5px;
+	margin: 1rem;
+	box-shadow: #2B2B2B 0px 2px 4px;
+}
+.offerings p {
+	color: var(--soft-white);
+}
+.offerings h3 {
+	color: var(--soft-white);
+	font-weight: bold;
+}
 /* MEDIA QUERY (medium) */
 
 /* MEDIA QUERY (large) */
