@@ -94,6 +94,8 @@ h1 {
 h2 {
 	font-size: 2em;
 	color: var(--midnight-blue);
+	margin-top: 50px;
+	padding: 0 1rem;
 }
 h3 {
 	font-size: 1.5em;
@@ -130,15 +132,24 @@ p {
 	font-size: 1em;
 	color: var(--dark-charcoal);
 	line-height: 1.5;
+	padding: 1rem;
 }
 footer {
 	grid-area: footer;
 	background-color: var(--midnight-blue);
 	color: var(--soft-white);
+	justify-content: center;
+	text-align: center;
+}
+footer address {
+	font-style: normal;
+	color: var(--soft-white);
+	text-align: center;
 }
 footer a {
 	color: var(--champagne-gold);
 	font-weight: bold;
+	text-align: center;
 }
 .offerings {
 	background-color: var(--olive-green);
