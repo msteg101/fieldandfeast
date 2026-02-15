@@ -48,26 +48,24 @@
         <h2>A Gallery of Field &amp; Feast</h2>
         <p>Experience the elegance and artistry behind Field &amp; Feast through our curated collection of images. From lush fields and handcrafted ingredients to beautifully plated farm-to-table creations, each photo tells the story of our commitment to excellence.</p>
         <section class="gallery">
-            <picture>
-                <source media="(min-width: 400px)"
-                        srcset="images/ tomatoes-200w.jpg">
-                <img src="images/tomatoes-200w.jpg" alt="Heirloom tomatoes at   peak ripeness.">
-            </picture>
+            <div class="gallery-item">
+            <img src="images/tomatoes-200w.jpg" alt="Heirloom tomatoes at peak ripeness"
+                srcset="images/tomatoes-200w.jpg 200w, images/tomatoes-300w.jpg 300w, images/tomatoes-600w.jpg 600w"
+                sizes="(min-width: 1200px) 600px, (min-width: 900px) 300px, (min-width: 480px)">
             <p>Heirloom tomatoes at peak ripeness.</p>
-        
-            <picture>
-                <source media="(min-width: 400px)"
-                        srcset="images/olive-oil-200w.jpg">
-                <img src="images/olive-oil-200w.jpg" alt="Drizzling olive oil over fresh harvest">
-            </picture>
+            </div>
+            <div class="gallery-item">
+            <img src="images/olive-oil-200w.jpg" alt="Drizzling olive oil over fresh harvest"
+                srcset="images/olive-oil-200w.jpg 200w, images/olive-oil-300w.jpg 300w, images/olive-oil-600w.jpg 600w"
+                sizes="(min-width: 1200px) 600px, (min-width: 900px) 300px, (min-width: 480px)">
+            </div>
             <p>Drizzling golden olive oil over fresh harvest.</p>
-            <picture>
-                <source media="(min-width: 400px)"
-                        srcset="images/table-setting-200w.jpg">
-                <img src="images/table-setting-200w.jpg" alt="Elegant tablescape under the evening sky.">
-            </picture>
+            <div class="gallery-item">
+            <img src="images/table-setting-200w.jpg" alt="Elegant tablescape under the evening sky"
+                srcset="images/table-setting-200w.jpg 200w, images/table-setting-300w.jpg 300w, images/table-setting-600w.jpg 600w"
+                sizes="(min-width: 1200px) 600px, (min-width: 900px) 300px, (min-width: 480px)">
             <p>Elegant tablescape under the evening sky.</p>
-    
+            </div>
             <div class="gallery-item">
             <img src="images/chef-plating-200w.jpg" alt="Artful plating with seasonal ingredients."
                 srcset="images/chef-plating-200w.jpg 200w, images/chef-plating-300w.jpg 300w, images/chef-plating-600w.jpg 600w"
