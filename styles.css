@@ -68,21 +68,22 @@ table {
 body {
 	background-color: var(--linen);
 	display: grid;
-	justify-content: center;
-	grid-template-columns: auto;
+	grid-template-columns: 1fr;
 	grid-template-areas: "header" "main" "footer";
 	font-family: var(--font-family);
-	
+	margin: 0;
 }
 header {
+	width: 100%;
 	grid-area: header;
 	background-color: var(--midnight-blue);
 	color: var(--soft-white);
 	font-family: var(--font-family);
-	padding: 1rem;
+	padding: 1rem 0;
 	text-align: center;
 }
 main {
+	display: grid;
 	grid-area: main;
 	margin: 0 1em;
 }
@@ -112,6 +113,11 @@ nav ul {
 	display: flex;
 	justify-content: center;
 	width: 100%;
+	padding: 5px 20px;
+	margin: 0 auto;
+	justify-content: space-between;
+	text-align: center;
+	max-width: 80%;
 }
 nav a {
 	color: var(--midnight-blue);
@@ -159,15 +165,27 @@ footer a {
 	font-style: italic;
 	margin: 1rem;
 }
+hr {
+	border: none;
+	border-top: 3px solid var(--champagne-gold);
+	margin: 1rem 0;
+}
 /* MEDIA QUERY (medium) */
-@media all (min-with: 600px) {
-	
+@media all and (min-width: 600px) {
+	.gallery {
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: auto auto;
+	}
+	#span-offerings {
+		grid-column: 1 / -1;
+	}
 }
 /* MEDIA QUERY (large) */
-@media all (min-width: 900px) {
+@media all and (min-width: 900px) {
 	
 }
+
 /* MEDIA QUERY (xl) */
-@media all (min-width: 1200px) {
+@media all and (min-width: 1200px) {
 	
 }
