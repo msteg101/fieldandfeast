@@ -171,10 +171,16 @@ footer a {
 	grid-template-columns: 1fr;
 	gap: 1rem;
 	background-color: var(--soft-white);
-	box-shadow: #2B2B2B 0px 2px 4px;
 	border-radius: 5px;
 	font-style: italic;
 	margin: 1rem;
+}
+.gallery-item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	box-shadow: #2B2B2B 0px 2px 4px;
+	margin-bottom: 1rem;
 }
 hr {
 	border: none;
