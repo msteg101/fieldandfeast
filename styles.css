@@ -152,6 +152,10 @@ footer a {
 	color: var(--champagne-gold);
 	font-weight: bold;
 	text-align: center;
+	text-decoration: underline;
+}
+.media {
+	margin-top: 2rem;
 }
 .offerings {
 	display: grid;
@@ -168,12 +172,15 @@ footer a {
 	box-shadow: #2B2B2B 0px 2px 4px;
 }
 .offer ul {
-	list-style-position: outside;
+	list-style-position: inside;
 	list-style-type: disc;
-	padding-left: 2rem;
+	font-size: 1.5em;
+	line-height: 1.5;
 }
-.offerings p {
+.offer p {
 	color: var(--soft-white);
+	padding: 1rem 0;
+	font-size: 1.5em;
 }
 .offerings h3 {
 	color: var(--soft-white);
@@ -190,6 +197,7 @@ footer a {
 	border-radius: 5px;
 	font-style: italic;
 	margin: 1rem;
+	text-align: center;
 }
 .gallery-item {
 	display: flex;
@@ -252,6 +260,10 @@ hr {
 
 /* MEDIA QUERY (xl) */
 @media all and (min-width: 1200px) {
+	main {
+		max-width: 75%;
+		margin: 0 auto;
+	}
 	.gallery {
 		grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 		grid-template-rows: auto auto;
